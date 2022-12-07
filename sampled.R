@@ -3,7 +3,7 @@ library(PerMallows)
 source("sampling_sevt.R")
 source("methods.R")
 
-ps <- c(2) ## num variables
+ps <- c(2, 3, 4, 5, 6) ## num variables
 Ns <- c(100, 250, 500, 1000, 3000, 5000, 10000) ## sample size
 #Ns <- c(500, 1000, 2000, 3000) ## sample size
 ks <- c(2, 3, 4) ## complexity (stages per stratum or prob_edges = k / (p-1))
@@ -13,7 +13,7 @@ sampling_methods_names <- c("random_sevt")
 
 sam_meth <- list(
   random_sevt = random_sevt,
-  random_bnsevt = random_bnsevt
+  #random_bnsevt = random_bnsevt
 )
 
 ## select here whoch methods to run
