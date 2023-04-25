@@ -42,7 +42,7 @@ for (nm in sampling_methods_names){
 
 selected <- c( "best_bhc", "best_kmeans", "bn_tabu", "bn_mmhc")
 path <- "plot"
-dir.create(path)
+dir.create(path, show = FALSE)
 dt1 <- data.table(ddply(dtall, .(p, N, k, l, nm, algorithm), summarise, 
                       time.stde = sd(time, na.rm = TRUE) / sum(!is.na(time)),
                       time = mean(time, na.rm = TRUE),
@@ -83,6 +83,16 @@ ggsave(
   path = path,
   width = 3,
   height = 3.5,
+  units = "in"
+)
+
+
+ggsave(
+  file = paste0("plot_",pp,"var_random_sevt.pdf"),
+  plot = PLGG,
+  path = path,
+  width = 9,
+  height = 10,
   units = "in"
 )
 }
