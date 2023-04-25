@@ -12,6 +12,7 @@ library("stagedtrees")
 
 
 ### data obtained from https://github.com/informatics-lab/causality
+### download data enso_son.nc precip_au_son.nc iod_son.nc and place them in the data folder
 
 ### load the data
 enso <- ncvar_get(nc_open('data/enso_son.nc'))
