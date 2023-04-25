@@ -25,7 +25,7 @@ Proceedings of The 26th International Conference on Artificial Intelligence and 
 
 
 
-The code is written in R and based mainly in the [**stagedtrees**](https://www.jstatsoft.org/index.php/jss/article/view/v102i06) package available on [CRAN](https://cran.r-project.org/package=stagedtrees) and on [github](https://github.com/gherardovarando/stagedtrees).
+The code is written in R and based mainly in the [**stagedtrees**](https://www.jstatsoft.org/article/view/v102i06) package available on [CRAN](https://cran.r-project.org/package=stagedtrees) and on [github](https://github.com/gherardovarando/stagedtrees).
 
 
 Additional needed package, all avialable from CRAN: 
